@@ -1,0 +1,38 @@
+llm-jailbreak-defense/
+│
+├── data/
+│   ├── red_team_prompts.json         # Real-world jailbreak attempts
+│   ├── synthetic_prompts.json        # Auto-generated attacks
+│   └── safe_prompts.json             # Baseline normal prompts
+│
+├── src/
+│   ├── defense/
+│   │   ├── adversarial_training.py
+│   │   ├── output_filter.py
+│   │   └── input_preprocessor.py
+│   │
+│   ├── models/
+│   │   ├── base_model.py             # Load/fine-tune LLM
+│   │   └── safety_classifier.py
+│   │
+│   ├── eval/
+│   │   ├── run_eval.py
+│   │   └── metrics.py
+│   │
+│   └── utils/
+│       └── data_loader.py
+│
+├── notebooks/
+│   ├── 01_explore_prompts.ipynb
+│   ├── 02_fine_tuning.ipynb
+│   └── 03_evaluation.ipynb
+│
+├── configs/
+│   └── training_config.yaml
+│
+├── tests/
+│   └── test_defense_mechanisms.py
+│
+├── README.md
+├── requirements.txt
+└── train.py

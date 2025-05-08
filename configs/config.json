@@ -1,0 +1,12 @@
+{
+    "data_paths": {
+      "red_team": "data/red_team_prompts.json",
+      "synthetic": "data/synthetic_prompts.json",
+      "safe": "data/safe_prompts.json"
+    },
+    "model_name": "gpt2",
+    "output_dir": "models/adversarial",
+    "logging_dir": "logs",
+    "max_tokens": 100
+  }
+  
