@@ -1,7 +1,9 @@
 # src/eval/run_eval.py
 
 import json
-from src.models import BaseLLM, SafetyClassifier
+from ..models.base_model import BaseLLM
+from ..models.safety_classifier import SafetyClassifier
+
 from src.eval.metrics import (
     compute_jailbreak_rate,
     compute_false_positive_rate,
